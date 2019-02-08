@@ -1,6 +1,6 @@
 ---
 title: Azure Key Vault
-logo: /logos/azure-vault.png
+logo: /logos/azure-log.png
 keywords: portworx, containers, storage, vault
 description: Instructions on using Azure key vault(Secrets) with Portworx
 weight: 5
@@ -13,7 +13,7 @@ Portworx can integrate with Azure Key Vault [Secrets](https://docs.microsoft.com
 
 ## Setting up Azure Key Vault {#setting-up-azure-kv}
 
-Peruse [this section](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started) for help on setting up Azure Key Vault in your setup. 
+Peruse [this section](https://docs.microsoft.com/en-us/azure/key-vault/quick-create-portal) for help on setting up Azure Key Vault in your setup. 
 You will also require to register and authenticate application with Azure Key Vault. 
 
 - Please follow [doc] (https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started#register) to register application with azure active directory 
@@ -34,7 +34,7 @@ Following are the authentication details required by Portworx to connect Azure K
 If you are installing Portworx on Kubernetes, when generating the [Portworx Kubernetes spec file](https://install.portworx.com/):
 
 1. Pass in all the above variables as is in the Environment Variables section.
-2. Select `azure` from the `Secrets Store Type` list under `Advanced Settings`
+2. Select `Azure Key Vault` from the `Secrets Store Type` list under `Advanced Settings`
 
 To generate Portworx spec for Kubernetes, refer instructions, [click here](/portworx-install-with-kubernetes).
 
